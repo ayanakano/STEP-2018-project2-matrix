@@ -1,0 +1,22 @@
+
+# @file: step2.cpp
+# @author: Aya Nakano (ayanakano26@gmail.com)
+# @due date: 5/8/18
+# @brief: Program with 2 matrixes to make 3rd with product of numbers from matrix
+
+import numpy as np
+import time
+
+print ("Please enter the dimension of Matrix: ")
+
+N = int(input())
+
+matrix = np.random.randint(11, size = (N,N))
+matrix2 = np.random.randint(11, size = (N,N))
+
+print (matrix)
+print (matrix2)
+
+
+start_time = time.time()
+print("This program takes %s seconds" % (time.time() - start_time))
